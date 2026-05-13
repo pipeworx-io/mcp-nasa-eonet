@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-nasa-eonet",
+  "version": "0.1.0",
+  "description": "NASA EONET MCP — Earth Observatory Natural Event Tracker",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "nasa-eonet"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-nasa-eonet"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
