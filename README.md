@@ -1,19 +1,21 @@
-# mcp-nasa-eonet
+# @pipeworx/nasa-eonet
 
-NASA EONET MCP — Earth Observatory Natural Event Tracker
+NASA EONET MCP — Earth Observatory Natural Event Tracker. Wildfires, storms, volcanoes, icebergs, dust + haze, severe storms, snow, manmade events. Auto-curated from official sources. No auth.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `events` | List natural events (active / closed) with category, geometry, and source links. |
-| `get_event` | Fetch a single event by EONET id. |
-| `geojson` | Same as events but returns GeoJSON FeatureCollection (good for direct map rendering). |
-| `list_categories` | EONET category reference. |
-| `list_sources` | Official sources EONET aggregates. |
-| `list_layers` | Visualization layer reference (mapping the events to imagery layers). |
+- `events(status?, days?, source?, category?, bbox?, limit?, magnitude_id?, magnitude_min?, magnitude_max?)` — events list
+- `get_event(event_id)` — single event detail
+- `geojson(status?, days?, category?, bbox?, limit?)` — events as GeoJSON FeatureCollection
+- `list_categories()` — category reference
+- `list_sources()` — official data sources EONET aggregates
+- `list_layers(category?)` — visualization layer reference
+
+## Data source
+
+`https://eonet.gsfc.nasa.gov/api/v3/` — public NASA Goddard service.
 
 ## Quick Start
 
@@ -29,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -53,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
