@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/nasa-eonet",
   "title": "Nasa Eonet",
   "description": "NASA EONET MCP — Earth Observatory Natural Event Tracker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/nasa-eonet",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-nasa-eonet",
