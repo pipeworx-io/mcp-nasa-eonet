@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-nasa-eonet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NASA EONET MCP — Earth Observatory Natural Event Tracker",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-1138cb1c63f2059b1a8037dc89fc68a21e55dcb35357585262c0062284be58da",
-    "sourceCommit": "adb69d997f82a62e8e22b594488c7d04a227db35"
+    "sourceHash": "v1-054319f56a9237808424090228f79c6da5378da33ce4f7f96a5af7671b15fe42",
+    "sourceCommit": "6182c4cfebddb94950e060b5d2fca18f18ad1aca"
   }
 }
